@@ -9,6 +9,8 @@ on:
     paths:
       - .github/workflows/test.alamos.go.yaml
       - alamos/go/**
+      - go.work
+      - go.work.sum
       - x/go/**
   workflow_dispatch:
 
