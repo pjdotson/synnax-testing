@@ -6,10 +6,10 @@ on:
       - main
       - rc
   pull_request:
-    paths:
-      - .github/workflows/test.alamos.go.yaml
-      - alamos/go/**
-      - x/go/**
+    # paths:
+    #   - .github/workflows/test.alamos.go.yaml
+    #   - alamos/go/**
+    #   - x/go/**
   workflow_dispatch:
 
 jobs:
