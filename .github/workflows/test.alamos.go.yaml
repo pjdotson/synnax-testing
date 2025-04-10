@@ -17,14 +17,16 @@ jobs:
     name: Test (${{ matrix.os }})
     strategy:
       matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
         include:
           - os: ubuntu-latest
             format: true
+        exclude:
           - os:
-              ${{ (github.ref == 'refs/heads/main' || github.base_ref == 'main') &&
+              ${{ (github.ref != 'refs/heads/main' || github.base_ref != 'main') &&
               'macos-latest' }}
           - os:
-              ${{ (github.ref == 'refs/heads/main' || github.base_ref == 'main') &&
+              ${{ (github.ref != 'refs/heads/main' || github.base_ref != 'main') &&
               'windows-latest' }}
     runs-on: ${{ matrix.os }}
     steps:
@@ -39,7 +41,7 @@ jobs:
 
       - name: Format
         if: matrix.format
-        run: scripts/check-gofmt.sh alamos/go
+        run: bash scripts/check-gofmt.sh alamos/go
 
       - name: Install Ginkgo
         run: go install github.com/onsi/ginkgo/v2/ginkgo
