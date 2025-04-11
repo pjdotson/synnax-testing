@@ -68,6 +68,7 @@ jobs:
         run: pnpm lint:x
 
       - name: Type Check
+        if: matrix.lint
         run: pnpm check-types:x
 
       - name: Test

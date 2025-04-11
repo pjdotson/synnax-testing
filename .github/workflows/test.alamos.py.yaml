@@ -22,7 +22,7 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
         include:
           - os: ubuntu-latest
-            format: true
+            lint: true
         exclude:
           - os:
               ${{ (github.ref != 'refs/heads/main' || github.base_ref != 'main') &&
@@ -49,15 +49,17 @@ jobs:
         working-directory: alamos/py
 
       - name: isort
+        if: matrix.lint
         run: poetry run isort -c .
         working-directory: alamos/py
 
       - name: Format
-        if: matrix.format
+        if: matrix.lint
         run: poetry run black --check --diff --color .
         working-directory: alamos/py
 
       - name: Mypy
+        if: matrix.lint
         run: poetry run mypy .
         working-directory: alamos/py
 

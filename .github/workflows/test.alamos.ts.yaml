@@ -70,6 +70,7 @@ jobs:
         run: pnpm lint:alamos
 
       - name: Type Check
+        if: matrix.lint
         run: pnpm check-types:alamos
 
       - name: Test

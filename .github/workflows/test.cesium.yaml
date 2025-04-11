@@ -30,7 +30,7 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
         include:
           - os: ubuntu-latest
-            format: true
+            lint: true
         exclude:
           - os:
               ${{ (github.ref != 'refs/heads/main' || github.base_ref != 'main') &&
@@ -50,7 +50,7 @@ jobs:
           cache-dependency-path: go.work.sum
 
       - name: Format
-        if: matrix.format
+        if: matrix.lint
         run: bash scripts/check-gofmt.sh cesium
 
       - name: Install Ginkgo
