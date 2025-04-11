@@ -1,11 +1,11 @@
-name: Test - Cesium
+name: Test - Freighter (Go)
 
 on:
   pull_request:
     paths:
-      - .github/workflows/test.cesium.yaml
+      - .github/workflows/test.freighter.go.yaml
       - alamos/go/**
-      - cesium/**
+      - freighter/go/**
       - go.work
       - go.work.sum
       - x/go/**
@@ -14,9 +14,9 @@ on:
       - main
       - rc
     paths:
-      - .github/workflows/test.cesium.yaml
+      - .github/workflows/test.freighter.go.yaml
       - alamos/go/**
-      - cesium/**
+      - freighter/go/**
       - go.work
       - go.work.sum
       - x/go/**
@@ -51,11 +51,11 @@ jobs:
 
       - name: Format
         if: matrix.lint
-        run: bash scripts/check-gofmt.sh cesium
+        run: bash scripts/check-gofmt.sh freighter/go
 
       - name: Install Ginkgo
         run: go install github.com/onsi/ginkgo/v2/ginkgo
 
       - name: Test
         run: ginkgo ./...
-        working-directory: cesium
+        working-directory: freighter/go

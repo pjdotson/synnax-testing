@@ -10,8 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "algolia": "node ./src/util/algoliasearch.js",
-    "lint": "eslint --cache",
-    "fix": "eslint --cache --fix",
+    "lint": "eslint",
+    "fix": "eslint --fix",
     "format": "prettier --write .",
     "format-check": "prettier --check ."
   },
@@ -19,7 +19,7 @@
     "@astrojs/mdx": "^4.2.0",
     "@astrojs/react": "^4.2.1",
     "@astrojs/vercel": "^8.1.2",
-    "@fontsource/geist-mono": "^5.2.5",
+    "@fontsource/geist-mono": "catalog:",
     "@synnaxlabs/client": "workspace:*",
     "@synnaxlabs/media": "workspace:*",
     "@synnaxlabs/pluto": "workspace:*",
@@ -27,27 +27,27 @@
     "astro": "^5.5.2",
     "astro-embed": "^0.9.0",
     "astro-seo": "^0.8.4",
-    "clsx": "^2.1.1",
+    "clsx": "catalog:",
     "posthog-js": "^1.230.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "shiki": "^1.29.2",
-    "zod": "^3.24.2"
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@synnaxlabs/tsconfig": "workspace:*",
     "@types/html-escaper": "^3.0.4",
     "@types/offscreencanvas": "^2019.7.3",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "algoliasearch": "^4.24.0",
     "dotenv": "^16.4.7",
-    "eslint": "^9.24.0",
+    "eslint": "catalog:",
     "eslint-config-synnaxlabs": "workspace:*",
     "gray-matter": "^4.0.3",
     "html-escaper": "^3.0.3",
-    "prettier": "^3.5.3",
+    "prettier": "catalog:",
     "remove-markdown": "^0.6.0",
-    "typescript": "^5.8.3"
+    "typescript": "catalog:"
   }
 }

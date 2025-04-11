@@ -14,37 +14,38 @@
     "application level state"
   ],
   "scripts": {
+    "check-types": "tsc --noEmit",
     "build": "tsc --noEmit && vite build",
     "watch": "tsc --noEmit && vite build --watch",
     "test": "vitest",
-    "lint": "eslint --cache",
-    "fix": "eslint --cache --fix"
+    "lint": "eslint",
+    "fix": "eslint --fix"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.6.1",
+    "@reduxjs/toolkit": "catalog:",
     "@synnaxlabs/x": "workspace:*",
-    "@tauri-apps/api": "^2.4.1",
-    "async-mutex": "^0.5.0",
-    "proxy-memoize": "2.0.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-redux": "^9.2.0",
-    "zod": "^3.24.2"
+    "@tauri-apps/api": "catalog:",
+    "async-mutex": "catalog:",
+    "proxy-memoize": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-redux": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@synnaxlabs/tsconfig": "workspace:*",
     "@synnaxlabs/vite-plugin": "workspace:*",
-    "@types/react": "^19.1.0",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@types/react": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
     "electron": "^33.4.4",
-    "eslint": "^9.24.0",
+    "eslint": "catalog:",
     "eslint-config-synnaxlabs": "workspace:*",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-redux": "^9.2.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.2.5",
-    "vitest": "^3.1.1"
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-redux": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
   },
   "files": [
     "dist"

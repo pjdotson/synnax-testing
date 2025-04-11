@@ -1,45 +1,34 @@
-name: Test - Console
+name: Test - Alamos (TypeScript)
 
 on:
   pull_request:
     paths:
-      - .github/workflows/test.console.yaml
+      - .github/workflows/test.alamos.ts.yaml
       - alamos/ts/**
-      - client/ts/**
       - configs/eslint/**
-      - configs/stylelint/**
       - configs/ts/**
       - configs/vite/**
-      - console/**
-      - drift/**
-      - freighter/ts/**
       - package.json
-      - pluto/**
       - pnpm-lock.yaml
       - pnpm-workspace.yaml
       - turbo.json
       - vitest.workspace.ts
-      - x/media/**
       - x/ts/**
   push:
+    branches:
+      - main
+      - rc
     paths:
-      - .github/workflows/test.console.yaml
+      - .github/workflows/test.alamos.ts.yaml
       - alamos/ts/**
-      - client/ts/**
       - configs/eslint/**
-      - configs/stylelint/**
       - configs/ts/**
       - configs/vite/**
-      - console/**
-      - drift/**
-      - freighter/ts/**
       - package.json
       - pnpm-lock.yaml
       - pnpm-workspace.yaml
       - turbo.json
       - vitest.workspace.ts
-      - pluto/**
-      - x/media/**
       - x/ts/**
   workflow_dispatch:
 
@@ -78,11 +67,11 @@ jobs:
 
       - name: Lint
         if: matrix.lint
-        run: pnpm lint:console
+        run: pnpm lint:alamos
 
       - name: Type Check
         if: matrix.lint
-        run: pnpm check-types:console
+        run: pnpm check-types:alamos
 
       - name: Test
-        run: pnpm test:console
+        run: pnpm test:alamos

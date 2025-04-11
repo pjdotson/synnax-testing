@@ -24,31 +24,32 @@
     "directory": "client/ts"
   },
   "scripts": {
+    "check-types": "tsc --noEmit",
     "build": "tsc --noEmit && vite build",
     "watch": "tsc --noEmit && vite build --watch",
     "test": "vitest",
-    "lint": "eslint --cache",
-    "fix": "eslint --cache --fix",
+    "lint": "eslint",
+    "fix": "eslint --fix",
     "madge": "madge --circular src"
   },
   "dependencies": {
     "@synnaxlabs/freighter": "workspace:*",
     "@synnaxlabs/x": "workspace:*",
-    "async-mutex": "^0.5.0",
-    "uuid": "^11.1.0",
-    "zod": "^3.24.2"
+    "async-mutex": "catalog:",
+    "uuid": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@synnaxlabs/tsconfig": "workspace:*",
     "@synnaxlabs/vite-plugin": "workspace:*",
-    "@types/node": "^22.13.10",
-    "@types/uuid": "^10.0.0",
-    "eslint": "^9.24.0",
+    "@types/node": "catalog:",
+    "@types/uuid": "catalog:",
+    "eslint": "catalog:",
     "eslint-config-synnaxlabs": "workspace:*",
-    "madge": "^8.0.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.2.5",
-    "vitest": "^3.1.1"
+    "madge": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
   },
   "type": "module",
   "types": "dist/index.d.ts",

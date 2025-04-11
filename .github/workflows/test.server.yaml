@@ -1,24 +1,30 @@
-name: Test - Cesium
+name: Test - Server
 
 on:
   pull_request:
     paths:
-      - .github/workflows/test.cesium.yaml
+      - .github/workflows/test.server.yaml
       - alamos/go/**
+      - aspen/**
       - cesium/**
+      - freighter/go/**
       - go.work
       - go.work.sum
+      - synnax/**
       - x/go/**
   push:
     branches:
       - main
       - rc
     paths:
-      - .github/workflows/test.cesium.yaml
+      - .github/workflows/test.server.yaml
       - alamos/go/**
+      - aspen/**
       - cesium/**
+      - freighter/go/**
       - go.work
       - go.work.sum
+      - synnax/**
       - x/go/**
   workflow_dispatch:
 
@@ -51,11 +57,11 @@ jobs:
 
       - name: Format
         if: matrix.lint
-        run: bash scripts/check-gofmt.sh cesium
+        run: bash scripts/check-gofmt.sh synnax
 
       - name: Install Ginkgo
         run: go install github.com/onsi/ginkgo/v2/ginkgo
 
       - name: Test
         run: ginkgo ./...
-        working-directory: cesium
+        working-directory: synnax

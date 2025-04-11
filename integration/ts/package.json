@@ -13,8 +13,8 @@
   ],
   "scripts": {
     "watch": "tsc --noEmit && vite build --watch",
-    "lint": "eslint --cache",
-    "fix": "eslint --cache --fix"
+    "lint": "eslint",
+    "fix": "eslint --fix"
   },
   "dependencies": {
     "@synnaxlabs/client": "workspace:*",
@@ -24,12 +24,12 @@
   "devDependencies": {
     "@synnaxlabs/tsconfig": "workspace:*",
     "@synnaxlabs/vite-plugin": "workspace:*",
-    "@types/node": "^22.13.10",
-    "eslint": "^9.24.0",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
     "eslint-config-synnaxlabs": "workspace:*",
-    "typescript": "^5.8.3",
-    "vite": "^6.2.5",
-    "vitest": "^3.1.1"
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
   },
   "main": "dist/client.cjs",
   "module": "dist/client.js",
