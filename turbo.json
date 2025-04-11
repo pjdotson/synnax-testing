@@ -8,7 +8,8 @@
   "tasks": {
     "build": { "dependsOn": ["^build"], "outputs": ["dist/**", ".vercel/**"] },
     "build-vite": { "dependsOn": ["^build"], "outputs": ["dist/**"] },
-    "lint": {},
+    "check-types": { "dependsOn": ["^build"] },
+    "lint": { "dependsOn": ["^build"] },
     "dev-vite": { "cache": false },
     "dev": { "cache": false },
     "watch": { "cache": false },

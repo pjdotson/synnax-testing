@@ -8,15 +8,15 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "lint": "eslint --cache",
-    "fix": "eslint --cache --fix"
+    "lint": "eslint",
+    "fix": "eslint --fix"
   },
   "dependencies": {
     "stylelint": "^16.15.0",
     "stylelint-config-standard": "^37.0.0"
   },
   "devDependencies": {
-    "eslint": "^9.24.0",
+    "eslint": "catalog:",
     "eslint-config-synnaxlabs": "workspace:*"
   }
 }
