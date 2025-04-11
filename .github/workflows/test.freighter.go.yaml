@@ -1,10 +1,6 @@
 name: Test - Freighter (Go)
 
 on:
-  push:
-    branches:
-      - main
-      - rc
   pull_request:
     paths:
       - .github/workflows/test.freighter.go.yaml
@@ -13,6 +9,10 @@ on:
       - go.work
       - go.work.sum
       - x/go/**
+  push:
+    branches:
+      - main
+      - rc
   workflow_dispatch:
 
 jobs:

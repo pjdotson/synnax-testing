@@ -1,10 +1,6 @@
 name: Test - Server
 
 on:
-  push:
-    branches:
-      - main
-      - rc
   pull_request:
     paths:
       - .github/workflows/test.server.yaml
@@ -16,6 +12,10 @@ on:
       - go.work.sum
       - synnax/**
       - x/go/**
+  push:
+    branches:
+      - main
+      - rc
   workflow_dispatch:
 
 jobs:

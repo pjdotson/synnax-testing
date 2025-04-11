@@ -1,10 +1,6 @@
 name: Test - Alamos (Go)
 
 on:
-  push:
-    branches:
-      - main
-      - rc
   pull_request:
     paths:
       - .github/workflows/test.alamos.go.yaml
@@ -12,6 +8,10 @@ on:
       - go.work
       - go.work.sum
       - x/go/**
+  push:
+    branches:
+      - main
+      - rc
   workflow_dispatch:
 
 jobs:
