@@ -1,26 +1,30 @@
-name: Test - Aspen
+name: Test - Server
 
 on:
   pull_request:
     paths:
-      - .github/workflows/test.aspen.yaml
+      - .github/workflows/test.server.yaml
       - alamos/go/**
       - aspen/**
+      - cesium/**
       - freighter/go/**
       - go.work
       - go.work.sum
+      - synnax/**
       - x/go/**
   push:
     branches:
       - main
       - rc
     paths:
-      - .github/workflows/test.aspen.yaml
+      - .github/workflows/test.server.yaml
       - alamos/go/**
       - aspen/**
+      - cesium/**
       - freighter/go/**
       - go.work
       - go.work.sum
+      - synnax/**
       - x/go/**
   workflow_dispatch:
 
@@ -53,11 +57,11 @@ jobs:
 
       - name: Format
         if: matrix.format
-        run: bash scripts/check-gofmt.sh aspen
+        run: bash scripts/check-gofmt.sh synnax
 
       - name: Install Ginkgo
         run: go install github.com/onsi/ginkgo/v2/ginkgo
 
       - name: Test
         run: ginkgo ./...
-        working-directory: aspen
+        working-directory: synnax

@@ -1,11 +1,10 @@
-name: Test - Aspen
+name: Test - Freighter (Go)
 
 on:
   pull_request:
     paths:
-      - .github/workflows/test.aspen.yaml
+      - .github/workflows/test.freighter.go.yaml
       - alamos/go/**
-      - aspen/**
       - freighter/go/**
       - go.work
       - go.work.sum
@@ -15,9 +14,8 @@ on:
       - main
       - rc
     paths:
-      - .github/workflows/test.aspen.yaml
+      - .github/workflows/test.freighter.go.yaml
       - alamos/go/**
-      - aspen/**
       - freighter/go/**
       - go.work
       - go.work.sum
@@ -53,11 +51,11 @@ jobs:
 
       - name: Format
         if: matrix.format
-        run: bash scripts/check-gofmt.sh aspen
+        run: bash scripts/check-gofmt.sh freighter/go
 
       - name: Install Ginkgo
         run: go install github.com/onsi/ginkgo/v2/ginkgo
 
       - name: Test
         run: ginkgo ./...
-        working-directory: aspen
+        working-directory: freighter/go
