@@ -16,6 +16,16 @@ on:
     branches:
       - main
       - rc
+    paths:
+      - .github/workflows/test.server.yaml
+      - alamos/go/**
+      - aspen/**
+      - cesium/**
+      - freighter/go/**
+      - go.work
+      - go.work.sum
+      - synnax/**
+      - x/go/**
   workflow_dispatch:
 
 jobs:

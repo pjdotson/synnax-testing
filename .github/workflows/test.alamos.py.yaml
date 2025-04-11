@@ -9,6 +9,9 @@ on:
     branches:
       - main
       - rc
+    paths:
+      - .github/workflows/test.alamos.py.yaml
+      - alamos/py/**
   workflow_dispatch:
 
 jobs:

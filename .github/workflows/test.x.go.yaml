@@ -12,6 +12,12 @@ on:
     branches:
       - main
       - rc
+    paths:
+      - .github/workflows/test.x.go.yaml
+      - alamos/go/**
+      - go.work
+      - go.work.sum
+      - x/go/**
   workflow_dispatch:
 
 jobs:

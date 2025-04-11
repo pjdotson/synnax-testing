@@ -14,6 +14,14 @@ on:
     branches:
       - main
       - rc
+    paths:
+      - .github/workflows/test.aspen.yaml
+      - alamos/go/**
+      - aspen/**
+      - freighter/go/**
+      - go.work
+      - go.work.sum
+      - x/go/**
   workflow_dispatch:
 
 jobs:

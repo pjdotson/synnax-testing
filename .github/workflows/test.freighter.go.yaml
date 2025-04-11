@@ -13,6 +13,13 @@ on:
     branches:
       - main
       - rc
+    paths:
+      - .github/workflows/test.freighter.go.yaml
+      - alamos/go/**
+      - freighter/go/**
+      - go.work
+      - go.work.sum
+      - x/go/**
   workflow_dispatch:
 
 jobs:
