@@ -336,15 +336,15 @@ jobs:
               pub_date,
               platforms: {
                 "darwin-x86_64": {
-                  signature: ecd.decode(darwinSig.data),
+                  signature: "",
                   url: "",
                 },
                 "darwin-aarch64": {
-                  signature: ecd.decode(darwinSig.data),
+                  signature: "",
                   url: "",
                 },
                 "linux-x86_64": {
-                  signature: "not_supported_and_tauri_requires_an_entry",
+                  signature: "",
                   url: "",
                 },
                 "windows-x86_64": {
