@@ -399,7 +399,7 @@ export const Loaded: Layout.Renderer = ({ layoutKey, visible }) => {
           <Diagram.Controls>
             <Diagram.SelectViewportModeControl />
             <Diagram.FitViewControl />
-            <Flex.Box x pack>
+            <Flex.Box x>
               {canEditSchematic && (
                 <Diagram.ToggleEditControl
                   disabled={schematic.control === "acquired"}
