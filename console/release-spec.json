@@ -1,22 +1,22 @@
 {
   "version": "v0.45.4",
   "notes": "Synnax Update",
-  "pub_date": "2025-09-06T05:11:52Z",
+  "pub_date": "2025-09-06T05:36:56Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "",
-      "url": ""
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRZ3h4ZmpWZnBGeUZLZk9jUWVJMHR6YituVGJ0NjZWaDRKUDBqTGx0eUpaRHFQczJ1SmdzN1QwVGJwbnQyV2tybjBKbUY3bnRadmtxQVQyNUtVNitIdWg2SXRTcE9CT2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzU3MTM2OTY1CWZpbGU6U3lubmF4XzAuNDUuNF94NjRfZW4tVVMubXNpClU0SzVMZ1pOZmRPcjIySHY4OTVaV2ZsR0R4Skdla0NaWC9QSWtCWHc2RS9MSXhaekNQaXE5L25LazhUQU1MOFNRVmtxY3Q4QTJ5WmdxS1RxWDZ6VEF3PT0K",
+      "url": "https://github.com/pjdotson/synnax-testing/releases/download/console-v0.45.4/Synnax.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "",
-      "url": ""
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRZ3h4ZmpWZnBGeUZLZk9jUWVJMHR6YituVGJ0NjZWaDRKUDBqTGx0eUpaRHFQczJ1SmdzN1QwVGJwbnQyV2tybjBKbUY3bnRadmtxQVQyNUtVNitIdWg2SXRTcE9CT2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzU3MTM2OTY1CWZpbGU6U3lubmF4XzAuNDUuNF94NjRfZW4tVVMubXNpClU0SzVMZ1pOZmRPcjIySHY4OTVaV2ZsR0R4Skdla0NaWC9QSWtCWHc2RS9MSXhaekNQaXE5L25LazhUQU1MOFNRVmtxY3Q4QTJ5WmdxS1RxWDZ6VEF3PT0K",
+      "url": "https://github.com/pjdotson/synnax-testing/releases/download/console-v0.45.4/Synnax.app.tar.gz"
     },
     "linux-x86_64": {
-      "signature": "",
-      "url": ""
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRZ3h4ZmpWZnBGeUZLZk9jUWVJMHR6YituVGJ0NjZWaDRKUDBqTGx0eUpaRHFQczJ1SmdzN1QwVGJwbnQyV2tybjBKbUY3bnRadmtxQVQyNUtVNitIdWg2SXRTcE9CT2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzU3MTM2OTY1CWZpbGU6U3lubmF4XzAuNDUuNF94NjRfZW4tVVMubXNpClU0SzVMZ1pOZmRPcjIySHY4OTVaV2ZsR0R4Skdla0NaWC9QSWtCWHc2RS9MSXhaekNQaXE5L25LazhUQU1MOFNRVmtxY3Q4QTJ5WmdxS1RxWDZ6VEF3PT0K",
+      "url": "https://github.com/pjdotson/synnax-testing/releases/download/console-v0.45.4/Synnax.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRZ3h4ZmpWZnBGeU80ZDFuSGdQaVU5T1JLaTBtMnc4OUVaOStQQStZcVZFSFM5SGZCQUlhNEErM0YwYXk5aktSUnFBYVY3dEhwV3UzQzlJejJZcFZIS0w2VVpxQkgyTWdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzU3MTM1NDczCWZpbGU6U3lubmF4XzAuNDUuNF94NjRfZW4tVVMubXNpCm50TWdnZC8vNDVGLzRBYW9rYVhBeHF2eHlubkJKRW0xM2UzcUJjQ1JCeWFRTi9DdGlmTHBQSFpNNERNTVBPM0RRRzhzRkg2RzkwZ0ovUE1FcHQ5WEJ3PT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRZ3h4ZmpWZnBGeUZLZk9jUWVJMHR6YituVGJ0NjZWaDRKUDBqTGx0eUpaRHFQczJ1SmdzN1QwVGJwbnQyV2tybjBKbUY3bnRadmtxQVQyNUtVNitIdWg2SXRTcE9CT2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzU3MTM2OTY1CWZpbGU6U3lubmF4XzAuNDUuNF94NjRfZW4tVVMubXNpClU0SzVMZ1pOZmRPcjIySHY4OTVaV2ZsR0R4Skdla0NaWC9QSWtCWHc2RS9MSXhaekNQaXE5L25LazhUQU1MOFNRVmtxY3Q4QTJ5WmdxS1RxWDZ6VEF3PT0K",
       "url": "https://github.com/pjdotson/synnax-testing/releases/download/console-v0.45.4/Synnax_0.45.4_x64_en-US.msi"
     }
   }
